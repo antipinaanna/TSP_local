@@ -32,7 +32,7 @@ std::vector<unsigned> get_solution(const std::vector<std::vector<unsigned>> &dis
             if (distance < min_distance) {
                 min_distance = distance;
                 nearest_city = j;
-   ммиит           }
+   	     }
         }
         visited[nearest_city] = true;
         current_city = nearest_city;
@@ -96,8 +96,8 @@ void local_s(std::vector<unsigned> &tour, const std::vector<std::vector<unsigned
 
 
 int main() {
-    std::string folderPath = "./data1";
-    std::ofstream file_out("output_dataframe1");
+    std::string folderPath = "./data";
+    std::ofstream file_out("output_dataframe2");
 	if (file_out.is_open())
 	{
 		for (const auto &entry : fs::directory_iterator(folderPath)) 
